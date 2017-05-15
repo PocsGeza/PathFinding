@@ -3,7 +3,14 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         Title="MainWindow" Height="350" Width="525">
     <Grid>
-        <Grid HorizontalAlignment="Left" Height="289" Margin="24,20,0,0" VerticalAlignment="Top" Width="471"/>
+        <Grid x:Name="MachineGrid" HorizontalAlignment="Left" Height="290" Margin="24,24,20,20" VerticalAlignment="Center" Width="471" Grid.Row="5" Grid.Column="5">
+            <Grid.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black" Offset="0"/>
+                    <GradientStop Color="White" Offset="1"/>
+                </LinearGradientBrush>
+            </Grid.Background>
+        </Grid>
 
     </Grid>
 </Window>
